@@ -95,3 +95,74 @@ footer{
 .texto-desc h5{
     font-size: 3rem;
 }
+
+.texto-desc p{
+    font-size: 1.5rem;
+}
+.texto-desc a{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+/* branding  */
+
+.branding{
+    font-size: 2rem;
+    padding:2.5rem; 
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* ** FOOTER */
+
+.pie-de-pagina{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(252, 119, 1);
+}
+
+.pie-de-pagina h2{
+    font-size:2rem;
+}
+
+.pie-de-pagina a{ 
+    color:white; 
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.pie-de-pagina a:hover{ 
+    background-color: darkorange;
+    border-radius: 10px;
+}
+
+.redes-sociales ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.redes-sociales h2{ 
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.trabaja-con-nosotros{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.trabaja-con-nosotros h2{ 
+    padding-top: 1rem;
+}
+
+.derechos{ 
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    opacity: 0.5;
+}
