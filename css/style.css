@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{ 
+    /* mobile first */
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "header"
+    "main" 
+    "footer";
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+
+/* **   HEADER   */
+.cabezera {
+    background-color: rgb(252, 119, 1);
+    color: black
+    } 
+.cabezera a:hover{ 
+    background-color:darkorange;
+    border-radius: 10px;
+} 
+
+/* **   MAIN */
+.cuerpo{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+
+/* ultimos ingresos */
+.ultimos-ingresos{
+    max-width: 500px;
+}
+.img-container{
+    width: 500px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.img-container div img{ 
+        width: 100%;
+        height: 400px;
+        object-fit:fill;
+}
+.boton-carrusel{
+    background-color: black;
+}
+
+.ultimos-ingresos h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding:2rem;
+}
+
+
+/* ofertas hasta agotar stock */
+.ofertas-agotar-stock h2{
+    font-size: 3rem; 
+    text-align: center;
+    padding:2rem;
+}
+.ofertas-agotar-stock{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-cards div{
+    margin-bottom: 2rem;
+    background-color: lightgray;
+}
+
+.caja-cards div img{ 
+    object-fit: cover;
+}
+
+.texto-desc h5{
+    font-size: 3rem;
+}

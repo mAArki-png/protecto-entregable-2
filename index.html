@@ -4,43 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <title>Document</title>
 </head>
 
+
 <body>
     <header class="cabezera">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Saladas Shop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <a class="navbar-brand text-white titulo fs-1" href="#">Saladas Shop</a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active fs-5 text-white" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle fs-5 text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/tecnologia.html">Tecnologia</a></li>
-                                <li><a class="dropdown-item" href="./pages/indumentaria.html">Indumentaria</a></li>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item fs-5" href="./pages/tecnologia.html">Tecnologia</a></li>
+
+                                <li><a class="dropdown-item fs-5" href="./pages/indumentaria.html">Indumentaria</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" aria-disabled="true" href="./pages/sobre-nosotros.html">Sobre
+                            <a class="nav-link fs-5 text-white" href="./pages/contacto.html">Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 text-white" aria-disabled="true"
+                                href="./pages/sobre-nosotros.html">Sobre
                                 nosotros</a>
                         </li>
                     </ul>
@@ -49,25 +57,15 @@
         </nav>
     </header>
     <main class="cuerpo">
-        <h2>Ultimos Ingresos</h2>
         <section class="ultimos-ingresos">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
+            <h2>Ultimos Ingresos</h2>
+            <div id="carouselExample" class="carousel slide img-container">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./img/ingreso-1.jfif" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/ingreso-2.jfif" class="d-block w-100" alt="...">
+                        <img src="./img/ingreso-2-b.jfif" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="./img/ingreso-3.jfif" class="d-block w-100" alt="...">
@@ -76,23 +74,27 @@
                         <img src="./img/ingreso-4.jfif" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon boton-carrusel" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon boton-carrusel" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
+
+
         <section class="ofertas-agotar-stock">
-            <h2>Ofertas hasta agotar stock</h2>            <div class="carda-almacem">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+            <h2>Ofertas hasta agotar stock</h2>
+            <div class="carda-almacem caja-cards">
+                <div class="card" style="width: 25rem;">
+                    <img src="./img/oferta-1.jfif" class="card-img-top" alt="...">
+                    <div class="card-body texto-desc">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card’s content.</p>
@@ -100,9 +102,9 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                <div class="card" style="width: 25rem;">
+                    <img src="./img/oferta-2.jfif" class="card-img-top" alt="...">
+                    <div class="card-body texto-desc">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card’s content.</p>
@@ -110,16 +112,24 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                <div class="card" style="width: 25rem;">
+                    <img src="./img/oferta-3.jfif" class="card-img-top" alt="...">
+                    <div class="card-body texto-desc">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card’s content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-            </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="./img/oferta-4.jfif" class="card-img-top" alt="...">
+                    <div class="card-body texto-desc">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
         </section>
         <section class="branding">
             <h2>Lo importado que querés, al precio justo.</h2>
@@ -134,10 +144,6 @@
             </ul>
         </section>
     </footer>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
