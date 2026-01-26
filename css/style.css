@@ -106,13 +106,14 @@ footer{
 /* branding  */
 
 .branding{
-    font-size: 2rem;
     padding:2.5rem; 
-    text-align: center;
     font-style: italic;
 }
-
-
+.branding h2 {
+    font-size:2.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
 /* ** FOOTER */
 
 .pie-de-pagina{ 
@@ -165,4 +166,49 @@ footer{
     padding: 1rem;
     font-size: 1rem;
     opacity: 0.5;
+}
+
+
+/** formulario contacto* */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 2rem;
+    background-color: darkorange;
+    border:2px solid lightgray;
+    border-radius: 10px;
+}
+.formulario h2{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    color:white;
+}
+
+.formulario div{ 
+    margin: 1.5rem;
+}
+.formulario div label{
+    font-size: 1rem;
+    color:black
+}
+
+.formulario .boton{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario button{ 
+    background-color: green;
+    color:white;
+    margin-bottom:2rem;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+.formulario button:hover{ 
+    background-color: darkgreen;
+    color: white;
 }
