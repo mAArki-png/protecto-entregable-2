@@ -212,3 +212,55 @@ footer{
     background-color: darkgreen;
     color: white;
 }
+
+/* *sobre nosotros* */
+
+.cuerpo-sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    max-width: 350px;
+    margin: 1.5rem auto;
+    background-color: darkorange;
+    border:2px solid lightgray;
+    border-radius: 10px;
+}
+.quienes-somos{
+    text-align: left;
+    padding:2rem;
+}
+.quienes-somos h2{ 
+    text-align: center;
+    font-size:2rem;
+    padding-bottom: 1rem;
+}
+.quienes-somos p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.video-muestra{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.video-muestra h2{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+.video-muestra iframe{ 
+    width: 310px;
+    height: 200px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.titulo-section-preguntas-frecuentes{ 
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+}
+
