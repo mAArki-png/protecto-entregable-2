@@ -1,28 +1,30 @@
-*{
+* {
     padding: 0;
-    margin: 0; 
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{ 
+body {
     /* mobile first */
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
 
     grid-template-areas:
-    "header"
-    "main" 
-    "footer";
+        "header"
+        "main"
+        "footer";
 }
 
-header{
+header {
     grid-area: header;
 }
-main{
+
+main {
     grid-area: main;
 }
-footer{
+
+footer {
     grid-area: footer;
 }
 
@@ -31,14 +33,15 @@ footer{
 .cabezera {
     background-color: rgb(252, 119, 1);
     color: black
-    } 
-.cabezera a:hover{ 
-    background-color:darkorange;
+}
+
+.cabezera a:hover {
+    background-color: darkorange;
     border-radius: 10px;
-} 
+}
 
 /* **   MAIN */
-.cuerpo{ 
+.cuerpo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,97 +50,117 @@ footer{
 
 
 /* ultimos ingresos */
-.ultimos-ingresos{
+.ultimos-ingresos {
     max-width: 490px;
 }
-.img-container{
+
+.img-container {
     width: 100%;
     border: 1px solid rgb(202, 202, 202);
 }
 
-.img-container div img{ 
-        width: 100%;
-        height: 400px;
-        object-fit:fill;
+.img-container div img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
 }
-.boton-carrusel{
+
+.boton-carrusel {
     background-color: black;
 }
 
-.ultimos-ingresos h2{
+.ultimos-ingresos h2 {
     text-align: center;
     font-size: 2.5rem;
-    padding:2rem;
+    padding: 2rem;
 }
 
 
 /* ofertas hasta agotar stock */
-.ofertas-agotar-stock h2{
-    font-size: 3rem; 
+.ofertas-agotar-stock h2 {
+    font-size: 3rem;
     text-align: center;
-    padding:2rem;
+    padding: 2rem;
 }
-.ofertas-agotar-stock{ 
+
+.ofertas-agotar-stock {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.caja-cards div{
-    margin-bottom: 2rem;
+.caja-cards div {
+    margin: 1.5rem 1rem;
     background-color: lightgray;
+
+    max-width: 250px;
 }
 
-.caja-cards div img{ 
+.caja-cards>div {
+    width: 100%;
+    height: auto;
+}
+
+
+.caja-cards div img {
     object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
-.texto-desc h5{
-    font-size: 3rem;
+.texto-desc h5 {
+    font-size: 1.5rem;
 }
 
-.texto-desc p{
-    font-size: 1.5rem;
+.texto-desc p {
+    font-size: 1rem;
 }
-.texto-desc a{
-    font-size: 1.5rem;
+
+.texto-desc a {
+    font-size: 1rem;
     padding: 1rem;
+    margin-top: auto;
+    width: 100%;
 }
+
 /* branding  */
 
-.branding{
-    padding:2.5rem; 
+.branding {
+    padding: 2.5rem;
     font-style: italic;
 }
+
 .branding h2 {
-    font-size:2.5rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 2rem;
 }
+
 /* ** FOOTER */
 
-.pie-de-pagina{ 
+.pie-de-pagina {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(252, 119, 1);
 }
 
-.pie-de-pagina h2{
-    font-size:2rem;
+.pie-de-pagina h2 {
+    font-size: 2rem;
 }
 
-.pie-de-pagina a{ 
-    color:white; 
+.pie-de-pagina a {
+    color: white;
     text-decoration: none;
     font-size: 1.5rem;
 }
-.pie-de-pagina a:hover{ 
+
+.pie-de-pagina a:hover {
     background-color: darkorange;
     border-radius: 10px;
 }
 
-.redes-sociales ul{
+.redes-sociales ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -145,23 +168,23 @@ footer{
     padding: 1rem;
 }
 
-.redes-sociales h2{ 
+.redes-sociales h2 {
     padding-left: 1rem;
     padding-top: 2rem;
 }
 
-.trabaja-con-nosotros{ 
+.trabaja-con-nosotros {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
 }
 
-.trabaja-con-nosotros h2{ 
+.trabaja-con-nosotros h2 {
     padding-top: 1rem;
 }
 
-.derechos{ 
+.derechos {
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
@@ -170,52 +193,55 @@ footer{
 
 
 /** formulario contacto* */
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     max-width: 600px;
     margin: 2rem;
     background-color: darkorange;
-    border:2px solid lightgray;
+    border: 2px solid lightgray;
     border-radius: 10px;
 }
-.formulario h2{
+
+.formulario h2 {
     text-align: center;
     padding: 1.5rem;
     font-size: 2.5rem;
-    color:white;
+    color: white;
 }
 
-.formulario div{ 
+.formulario div {
     margin: 1.5rem;
 }
-.formulario div label{
+
+.formulario div label {
     font-size: 1rem;
-    color:black
+    color: black
 }
 
-.formulario .boton{ 
+.formulario .boton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.formulario button{ 
+.formulario button {
     background-color: green;
-    color:white;
-    margin-bottom:2rem;
+    color: white;
+    margin-bottom: 2rem;
     font-size: 1.8rem;
     border-radius: 5px;
 }
-.formulario button:hover{ 
+
+.formulario button:hover {
     background-color: darkgreen;
     color: white;
 }
 
 /* *sobre nosotros* */
 
-.cuerpo-sobre-nosotros{
+.cuerpo-sobre-nosotros {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,41 +250,47 @@ footer{
     max-width: 350px;
     margin: 1.5rem auto;
     background-color: darkorange;
-    border:2px solid lightgray;
+    border: 2px solid lightgray;
     border-radius: 10px;
 }
-.quienes-somos{
+
+.quienes-somos {
     text-align: left;
-    padding:2rem;
+    padding: 2rem;
 }
-.quienes-somos h2{ 
+
+.quienes-somos h2 {
     text-align: center;
-    font-size:2rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
 }
-.quienes-somos p{
+
+.quienes-somos p {
     font-size: 1.2rem;
     line-height: 1.6;
 }
-.video-muestra{ 
+
+.video-muestra {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.video-muestra h2{
+
+.video-muestra h2 {
     text-align: center;
     padding: 1.5rem;
     font-size: 2rem;
 }
-.video-muestra iframe{ 
+
+.video-muestra iframe {
     width: 310px;
     height: 200px;
     margin-bottom: 2rem;
     border-radius: 10px;
 }
 
-.titulo-section-preguntas-frecuentes{ 
+.titulo-section-preguntas-frecuentes {
     text-align: center;
     padding: 2rem 1rem;
     font-size: 2rem;
@@ -267,47 +299,137 @@ footer{
 
 /* *productos* */
 
-.caja-productos{
-    display: flex; 
+.caja-productos {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.item-caja{ 
+
+.item-caja {
     margin-bottom: 5rem;
 }
-.item-caja > div{
-    border:3px solid orangered;
+
+.item-caja>div {
+    border: 3px solid orangered;
     margin: 5rem 2rem;
     border-radius: 10px;
     background-color: orange;
 }
 
 
-.item-caja div div{ 
+.item-caja div div {
     max-width: 400px;
 }
 
-.item-caja div div img{ 
+.item-caja div div img {
     width: 100%;
     height: 300px;
     border: 3px solid orangered;
-    border-radius:8px;
+    border-radius: 8px;
 }
-.item-caja div h5{ 
+
+.item-caja div h5 {
     font-size: 2rem;
 }
-.item-caja div button{ 
+
+.item-caja div button {
     color: white;
-    background-color:green;
+    background-color: green;
     width: 90px;
     height: 50px;
     border-radius: 10px;
-    border: 3px solid darkgreen; 
+    border: 3px solid darkgreen;
     margin: 0.5rem 0;
 }
 
-.item-caja div p small{ 
+.item-caja div p small {
     font-size: 1rem;
 }
+/* vista destok */
+/* *INDEX Y LOS CONTACTOS* */
 
+@media (min-width: 1023px) {
+
+    /* *INDEX* */
+    .ultimos-ingresos {
+        min-width: 80%;
+    }
+
+    .img-container {
+        border: 1px solid rgb(202, 202, 202);
+    }
+
+    .img-container div img {
+        width: 100%;
+        height: 600px;
+        object-fit: fill;
+    }
+
+
+
+    .ofertas-agotar-stock h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .carda-almacem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .caja-cards div {
+        margin: 1.5rem 1rem;
+        background-color: lightgray;
+        flex-direction: column;
+        display: flex;
+        max-width: 300px;
+    }
+
+    .caja-cards>div {
+        width: 100%;
+    }
+
+    .caja-cards div img {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .texto-desc h5 {
+        font-size: 2rem;
+    }
+
+    .texto-desc p {
+        font-size: 1rem;
+    }
+
+    .texto-desc a {
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin-top: auto;
+    }
+
+    /* *FOOTER* */
+    .pie-de-pagina {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cuerpo-contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        margin: 2rem;
+        background-color: darkorange;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+    }
+}
